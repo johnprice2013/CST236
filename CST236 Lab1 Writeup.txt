@@ -1,0 +1,32 @@
+John Price
+CST236
+Lab 1 Writeup
+What was the hardest part of this lab?
+I think the part that I had the most difficulty with is using Git without using the GUI I already have installed.  I detest using command line due to 
+needing to memorize lots of codes and the lack of a real interface.  For instance, I accidentally typed "git commit"  without the -a -m and had to manually 
+type in my commit message using VIM....  So, yeah, not my favorite, but I have a better understanding of it now.
+
+During the course of this lab, why did we exclude .pyc files?
+.pyc files contain byte code to be ready by pythons virtual machine.  So, just like .exe files, it's not healthy to have in a repo.  Also, since it is created
+on the fly anyways, there is no real point to having it there.
+
+Name three files which would likely need to have a gitignore added?
+.exe
+.pyc
+.coverage
+What is a pyunit TestCase?
+To the best that I can figure, the TestCase is used to identify that a function or set of functions are individual tests within pyunit.  So when creating the test functions, each begin with the word test to signify that they are individual tests.
+
+
+What is the difference between a git cherry pick and a rebase?
+I believe the difference is in the amount of commits that will be merged with the chosen location.  With cherry pick, you are picking specific commits, in a dicated order.  With rebase, it will be all commits from one pushed into the other.
+
+How could you use git to print out just the author name of a given file for the current version of the repo?
+I imagine that there is a way to access that data using the pre-commit file.  I don't know how that data is stored, so couldn't give the exact functions
+or data names, but I am sure there is a way to do it, not to dissimilar from how you can catch whether there is a print command in a python file that's being comitted.
+
+During this lab did you explore Tortoise Git or GIT Extensions? If not take a look at them, they probably would be useful for the remainder of the class
+I did not get a chance to look at them, but I will!
+
+Did you find the second issue in get_triangle_type? Did you choose to test the code as is or fix the code in get_triangle_type
+I found it and fixed it.  It was a simple fix and made it so that I could learn testing properly.  Although, if it were work related, I would have the developer(assuming it isn't myself) fix it, since it wouldn't be my job.
