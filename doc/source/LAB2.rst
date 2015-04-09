@@ -11,7 +11,6 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   code/source2.rst
    code/source1.rst
 
 
