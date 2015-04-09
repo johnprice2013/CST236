@@ -1,13 +1,13 @@
 """
-:mod:`source.source1` -- Example source code
+:mod:`source.source2` -- Example source code
 ============================================
 
-The following example code determines if a set of 3 sides of a triangle is equilateral, scalene or iscoceles
+The following example code determines if a set of 4 sides of a quadrilateral is a rectangle, square or rhombus
 """
 
 def get_quadrilateral_type(a=0, b=0, c=0,d=0):
     """
-    Determine if the given triangle is equilateral, scalene or Isosceles
+    Determine if the given quadrilateral a rectangle, square or rhombus
 
     :param a: line a
     :type a: float or int or tuple or list or dict
@@ -18,7 +18,10 @@ def get_quadrilateral_type(a=0, b=0, c=0,d=0):
     :param c: line c
     :type c: float
 
-    :return: "equilateral", "isosceles", "scalene" or "invalid"
+    :param d: line d
+    :type d: float
+
+    :return: "rectangle", "square", "rhombus" or "invalid"
     :rtype: str
     """
     if isinstance(a, (tuple, list)) and len(a) == 4:
