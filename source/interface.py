@@ -8,11 +8,14 @@ class interface(object):
     def getInput(self, input = None):
         return input
 
-    def handleInput(self, input = None):
+    def handleInput(self, input = None, kingdom = None):
         if input == "X":
             self.quitProgram()
         elif input == "?":
             return self.showCommands()
+        elif input == 'ENTer the trees' and kingdom != None:
+            kingdom.removeAllThreats()
+            return
         else:
             return "not valid"
 
@@ -20,4 +23,4 @@ class interface(object):
         sys.exit(0)
 
     def showCommands(self):
-        return "X = quit, I = identify threats, U = useless command, ? = show commands"
+        return "X = quit, I = identify threats, U = useless command, ? = show commands, ENTer the trees = remove all threats"

@@ -2,6 +2,7 @@
 Test for source.interface
 """
 import interface
+import kingdom
 from unittest import TestCase
 
 class InterfaceTest(TestCase):
@@ -32,9 +33,16 @@ class InterfaceTest(TestCase):
     def test_interface_get_commands(self):
         obj = interface.interface()
         result = obj.showCommands()
-        self.assertEqual(result, 'X = quit, I = identify threats, U = useless command, ? = show commands')
+        self.assertEqual(result, 'X = quit, I = identify threats, U = useless command, ? = show commands, ENTer the trees = remove all threats')
 
     def test_interface_question_show_commands(self):
         obj = interface.interface()
         result = obj.handleInput('?')
-        self.assertEqual(result, 'X = quit, I = identify threats, U = useless command, ? = show commands')
+        self.assertEqual(result, 'X = quit, I = identify threats, U = useless command, ? = show commands, ENTer the trees = remove all threats')
+
+    def test_interface_remove_all_threats(self):
+        obj = interface.interface()
+        testKingdom = kingdom.Kingdom()
+        testKingdom.createOrcList(20)
+        obj.handleInput('ENTer the trees',testKingdom)
+        self.assertEqual(len(testKingdom.orcList), 0)
