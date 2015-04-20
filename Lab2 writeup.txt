@@ -1,0 +1,21 @@
+#. Explain the major differences between TDD and BDD
+I think that the major difference between the two is that BDD gives you the tools to assign the tests directly to the user stories.  Where, in TDD, you simply create the stories based on the user stories.
+
+#. What is a mixin, what challenges can occur when testing them? What order are they initialized in
+I believe the mixin is essentially inheritance for python, the problem with testing is that you have to have the parent properly implemented before working on the child.
+
+#. In python what does "super" do?
+Super references which ever function you are trying to call in the parent object.  So if you want to run the parents constructor in your constructor, you need to call super.__init__, or something similar to that.
+
+#. Was there any job stories that did not meet the criteria we discussed in class? How did you handle this case?
+I had a fairly big problem with the majority of this lab, which is why I didn't complete it.  The problem is that I have no context for any of these user stories aside from, part one was a game and part two was a comparison tool.  There is no guidance on the design of the program.  I can make a program from scratch, but writing tests for a program from scratch is beyond me.  For a particular example,  Round one of part 2 has "When researching speed" as a context.  I have no idea what process this is.  Is that looking up the speeds for distances between two particular cities?  The program is immediately complicated, with nothing to build off of.  It's essentially, implement ALL of this criteria with hardly anything to go off of.
+
+#. Which model did you find most challenging? Why?
+I found both equally challenging.  I had an easier time with the Defence program, but that's simply because it was a more straight forward program.  I didn't need to network difference cities together and come up with routes, etc.
+
+
+#. Which model did you find easiest to update/maintain?
+I didn't spend much time on the BDD, but from a quick glance, TDD was easier to maintain, if only because I only had to pay attention to the test file and the source file and not a third one.
+
+#. How did you test that logging occurred only when desired?
+I didn't, was that in one of the test cases?
