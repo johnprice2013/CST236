@@ -1,0 +1,42 @@
+#0015
+['test_correct_func_works']
+#0021
+['test_shutdown_question']
+#0012
+['test_teach_no_question_provided']
+#0020
+['test_understanding_question']
+#0010
+['test_teach_func_exists']
+#0017
+['test_conversion_question']
+#0016
+['test_correct_no_question_provided']
+#0006
+['test_answers_90_percent']
+#0007
+['test_answers_number_removal_correct', 'test_answers_number_removal_question']
+#0004
+['test_no_question_mark']
+#0005
+['test_has_spaces']
+#0002
+['test_try_keywords_how', 'test_try_keywords_what', 'test_try_keywords_where', 'test_try_keywords_who', 'test_try_keywords_why']
+#0003
+['test_bad_question_start']
+#0013
+['test_teach_func_tried_twice', 'test_teach_func_tried_twice_retains']
+#0001
+['test_tries_to_answer']
+#0011
+['test_teach_func_works']
+#0014
+['test_correct_func_exists']
+#0019
+['test_inventor_question']
+#0018
+['test_seconds_question']
+#0008
+['test_valid_question_answer_return']
+#0009
+['test_unknown_question']
