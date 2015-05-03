@@ -1,0 +1,101 @@
+Write Up
+********
+
+#. What are five examples of other testing(nose2) plugins that might be useful?
+The doctests could be handy.  There is a third party one, nose2-cov, which helps generate the coverage reporting.  Profiling could be helpful.  There is an attribute plugin that will help with organizing tests and only running certain ones(I think).  Then there is one that layers your tests, which could be helpful.
+
+#. Do you plan to create any of these plugins for your term project?
+No.  I will be using the generic TESTCASE class and will call it good from that.  Other things that may be required, but I don't know if they fall under plugins, is the coverage reporting we implemented before and the doctests and html documentation.
+
+#. What is the hardest part of this lab?
+The hardest part was apparently remembering to do this section!  But really, the hardest part here was wrapping my head around using globals.  It's something that I have actually never done before.  So accessing the Requirements variable was a little strange to me.
+
+#. Did the code fully and completely implement the requirements? Explain
+
+No, there were a few tests that failed due to the code not doing what they were supposed to.  
+
+#. Was the requirements complete? Explain
+I would argue that no, they weren't complete because they didn't cover many negative testcases, as well as not covering certain parts, such as having too many arguments in your question, thus raising the exception "too many arguments".  
+
+
+    
+
+
+#. Why are requirements tracing so important?
+Well, it allows you to target trouble areas with a feature.  If many of the requirements for a specific feature are failing their tests, perhaps the coder should re-evaluate how to implement the feature.
+
+#. How long did it take to complete this lab?
+I think it was about 6 hours in total.
+
+
+#. For each bug you found in the source code enter a "Bug Request" in your write up following this template.
+   You should consider bugs to be not following the requirements, inaccurate requirements, or code that has
+   no reason for existing (not covered by the requirements):
+
+**ISSUE Number:**
+#1
+
+**BREIF:**
+the program does not provide the relative time in seconds.
+
+**Steps to reproduce:**:
+submit the question "how many seconds since <date time>"
+
+**Comments:**
+Would possible require a function in the answer_funcs file
+
+**Time Spent:**
+
+
+
+
+**ISSUE Number:**
+#2
+
+**BREIF:**
+The python inventor question response is inaccurate  should respond with "Guido Rossum (BDFL)
+
+**Steps to reproduce:**:
+submit the question "Who invented python"
+
+**Comments:**
+easy fix
+
+**Time Spent:**
+
+
+
+
+**ISSUE Number:**
+#3
+
+**BREIF:**
+the question regarding miles does not append "miles" to the end of the response
+
+**Steps to reproduce:**:
+submit the feet to miles question.
+
+**Comments:**
+nothing to comment, just needs the miles appended to return value.
+
+**Time Spent:**
+
+
+
+
+
+**ISSUE Number:**
+#4
+
+**BREIF:**
+source code does not allow a way to access parsed values of question.
+
+**Steps to reproduce:**:
+?
+
+**Comments:**
+maybe create a function to access these parsed values.
+
+**Time Spent:**
+
+
