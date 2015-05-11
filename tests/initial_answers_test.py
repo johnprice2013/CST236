@@ -4,6 +4,7 @@ from unittest import TestCase
 import time
 import getpass
 from ReqTracer import requirements
+import mock
 
 class TestQA(TestCase):
 
@@ -41,3 +42,30 @@ class TestQA(TestCase):
         answer = myInterface.ask("Why don't you shut down?")
         answerString = "I'm afraid I can't do that " + getpass.getuser()
         self.assertEqual(answer, answerString)
+
+    @requirements(['#0022'])
+    def test_where_am_i(self):
+        myInterface = Interface()
+        answer = myInterface.ask("Where am I?")
+        self.assertEqual(answer, "lab4")
+
+    @requirements(['#0023'])
+    def test_where_are_you(self):
+        myInterface = Interface()
+        answer = myInterface.ask("Where are you?")
+        self.assertEqual(answer, "https://github.com/johnprice2013/CST236.git")
+
+#    @requirements(['#0024'])
+#    def test_who_else(self):
+#        myInterface = Interface()
+#        answer = myInterface.ask("Who else is here?")
+#        self.assertEqual(answer, "")
+
+#    def test_mocking(self):
+#        from unittest.mock import MagicMock
+#        from answer_funcs import get_other_users
+#        myMock = mock.Mock()
+#        myMock.testFunc = get_other_users
+#        get_other_users = MagicMock(return_value = "bob$steve")
+#        answer = get_other_users()
+#        self.assertEqual(answer, "bob$steve")

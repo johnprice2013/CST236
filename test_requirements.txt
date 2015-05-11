@@ -25,9 +25,9 @@
 #0021
 ['test_shutdown_question']
 #0022
-[]
+['test_where_am_i']
 #0023
-[]
+['test_where_are_you']
 #0028
 []
 #0008
