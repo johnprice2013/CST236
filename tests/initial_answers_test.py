@@ -19,14 +19,6 @@ class TestQA(TestCase):
 
 
 
-#    @requirements(['#0018'])
-#    def test_seconds_question(self):
-#        myInterface = Interface()
-#        seconds = time.strftime("%d/%m/%Y%H:%M:%S")
-#        string = "How many seconds since " + str(seconds) + "?"
-#        answer = myInterface.ask(string)
-#        self.assertEqual(answer, "0 seconds")
-
     @requirements(['#0019'])
     def test_inventor_question(self):
         myInterface = Interface()
@@ -58,24 +50,27 @@ class TestQA(TestCase):
         answer = myInterface.ask("Where are you?")
         self.assertEqual(answer, "https://github.com/johnprice2013/CST236.git")
 
-    # @requirements(['#0024'])
-    # def test_who_else(self):
-        # myInterface = Interface()
-        # answer = myInterface.ask("Who else is here?")
-        # self.assertEqual(answer, "")
+    @requirements(['#0024','#0027'])
+    def test_who_else(self):
+        myInterface = Interface()
+        myInterface.ask = mock.Mock(return_value = "bob$steven")
+        answer = myInterface.ask("Who else is here?")
+        self.assertEqual(answer, "bob$steven")
 
+    @requirements(['#0025', '#0026'])
     def test_get_other_users(self):
         method = get_other_users
-        method = mock.Mock(return_value = "user$user2$user3")
-        answer = method()
-        self.assertEqual(answer, "user$user2$user3")
+        method.socket = mock.Mock()
+        method.socket.socket = mock.Mock()
+        method.socket.socket("192.168.64.3, 1337")
+        method.socket.socket.send = mock.Mock(return_value = "bob$steven")
+        answer = method.socket.socket.send("Who?")
+        self.assertEqual(answer, "bob$steven")
 
+    @requirements(['#0027'])
+    def test_get_other_users_failed(self):
+        method = get_other_users
+        method = mock.Mock(return_value = "IT'S A TRAAAPPPP")
+        answer = method("failed")
+        self.assertEqual(answer, "IT'S A TRAAAPPPP")
 
-#    def test_mocking(self):
-#        from unittest.mock import MagicMock
-#        from answer_funcs import get_other_users
-#        myMock = mock.Mock()
-#        myMock.testFunc = get_other_users
-#        get_other_users = MagicMock(return_value = "bob$steve")
-#        answer = get_other_users()
-#        self.assertEqual(answer, "bob$steve")

@@ -79,3 +79,13 @@ Username shall be determined by the name of the currently logged in user.
 #0033 The system shall stop generating Fibonacci sequence numbers once it has identified the first 1,000 numbers
 
 #0034 The system shall generate the first 1,000 Fibonacci sequence numbers in under 60 seconds
+
+**new performance requirements**
+
+#0035 The system shall generate 100 numbers in less than 5 seconds (number_counter)
+
+#0036 The system shall return the correct digit (digit 5 should be 5)
+
+#0037 The system shall generate no more than 100 numbers
+
+#0038 The system shall retrieve number in less than .05 seconds

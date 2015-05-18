@@ -1,0 +1,74 @@
+#0034
+['test_fib_thousand_time']
+#0030
+['test_one_million']
+#0033
+['test_fibo_total']
+#0032
+['test_fetch_time']
+#0031
+['test_add_time']
+#0006
+['test_answers_90_percent']
+#0007
+['test_answers_number_removal_correct', 'test_answers_number_removal_question']
+#0004
+['test_no_question_mark']
+#0005
+['test_has_spaces', 'test_has_spaces2']
+#0002
+['test_try_keywords_how', 'test_try_keywords_what', 'test_try_keywords_where', 'test_try_keywords_who', 'test_try_keywords_why']
+#0003
+['test_bad_question_start']
+#0001
+['test_tries_to_answer']
+#0024
+['test_who_else']
+#0025
+['test_get_other_users']
+#0026
+['test_get_other_users']
+#0027
+['test_get_other_users_failed', 'test_who_else']
+#0020
+['test_understanding_question']
+#0021
+['test_shutdown_question']
+#0022
+['test_where_am_i']
+#0023
+['test_where_are_you']
+#0028
+['test_fib_return_value']
+#0035
+['test_num_is_fast']
+#0008
+['test_valid_question_answer_return']
+#0036
+['test_num_is_accurate']
+#0037
+['test_generates_only_100']
+#0029
+['test_fib_wait_cool', 'test_fib_wait_second', 'test_fib_wait_second2', 'test_fib_wait_thinking']
+#0038
+['test_num_fast_fetch']
+#0015
+['test_correct_func_works']
+#0014
+['test_correct_func_exists']
+#0017
+['test_conversion_question']
+#0016
+['test_correct_no_question_provided']
+#0011
+['test_teach_func_works']
+#0010
+['test_teach_func_exists']
+#0013
+['test_teach_func_tried_twice', 'test_teach_func_tried_twice_retains']
+#0012
+['test_teach_no_question_provided']
+#0009
+['test_unknown_question']
+#0019
+['test_inventor_question']

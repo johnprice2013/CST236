@@ -1,0 +1,30 @@
+John Price
+CST236
+Lab 5 Writeup
+
+#. What was the hardest part of this lab?
+
+The hardest part was honestly wrapping my head around how to use mock appropriately.  Beyond that, I had a bit of trouble with the threaded aspect of some of the bits, but that came alright after looking at the given code.
+
+#. What is the difference between performance testing and performance measurement?
+I would assume the difference is that one is testing the performance against certain requirements while the other is simply taking the measurement of the performance(not against requirements)
+
+#. What new bugs did you encounter with the new code?
+
+I didn't come across any bugs that I am aware of, but that could just be me.  Maybe I didn't thoroughly test everything?
+
+#. Did you mock anything to speed up performance testing? Do you see any issues with this?
+
+I didn't mock any of the performance tests.  I can imagine that depending on what was mocked, it could invalidate the results...
+
+#. Generate at least 5 performance measurement value sets and graphs (these sets must be worthwhile)
+
+I really don't have time to do this, sorry.  I still need to finish up lab 6 before it's too late!  I am soooo close to catching up!
+
+#. Explain Load Testing, stress testing, endurance testing, spike testing configuration testing and isolation testing. How did you implement each of these?
+
+Isolation testing is making sure that the code will run on it's own.  Configuration testing is making sure that the code will run properly given different sets of configurations.  Spike testing makes sure that you code will run under various extremes of load or stress.  Endurance testing will ensure that you code will continue to run(if that's how it's setup to work) over a given period of time.  Load testing and stress testing could be considered similar, but I imagine they are taking the workload(processes, connections, temp, etc.) to a high value and ensure that it still functions properly.
+
+#. How long did this lab take to accomplish?
+
+This lab took me about 10 hours or so.  I spent quite a lot of time trying to work out how mocking was supposed to help me test properly.  Beyond that, it was figuring out why tests were breaking down.  (I had a bit of issues with the setup and teardown functions, but got those worked out quickly enough).

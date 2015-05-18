@@ -6,12 +6,44 @@ import threading
 import time
 
 seq_finder = None
+num_getter = None
 
 def feet_to_miles(feet):
     return "{0} miles".format(float(feet) / 5280)
 
 def hal_20():
     return "I'm afraid I can't do that {0}".format(getpass.getuser())
+
+class threaded_counter(threading.Thread):
+    def __init__(self, *args, **kwargs):
+        super(threaded_counter, self).__init__(*args, **kwargs)
+        self.sequence = [0,1]
+        self._stop = threading.Event()
+        self.num_indexes = 0
+
+    def stop(self):
+        self._stop.set()
+
+    def run(self):
+        self.num_indexes = 0
+        while not self._stop.isSet() and self.num_indexes < 100:
+            self.sequence.append(self.sequence[-1] + 1)
+            self.num_indexes += 1
+            time.sleep(.04)
+
+def get_number_seq(index):
+    index = int(index)
+    global num_getter
+    if num_getter is None:
+        
+        num_getter = threaded_counter()
+        num_getter.start()
+
+    if index > num_getter.num_indexes:
+        return "I'm not there yet, chill!"
+    else:
+        return num_getter.sequence[index]
+
 
 def get_git_branch():
     try:
