@@ -1,0 +1,159 @@
+*Master Setup*
+The setup for every test involves launching the sharptona program
+
+
+
+**0001**
+
+*Setup*
+
+no setup
+
+*Procedure*
+
+1. Verify that title bar of program reads "SharpTona"
+
+
+
+**0002**
+
+*Setup*
+
+no setup
+
+*Procedure*
+
+1. Verify that there is text next to the left of each textfield.  One reading "Question:" and the other reading "Answer:".  Verify that the top one is the one reading "Question:".
+
+
+
+**0003**
+
+*Setup*
+
+no setup
+
+*Procedure*
+
+1. Click on the textfield directly to the right of the "Question:" text.
+2. Type "What is the answer to everything?"
+3. Click on the button reading "Ask"
+4. Verify that there is a result in the textfield directly to the right of the "Answer:" text.
+
+
+**0004**
+
+*Setup*
+
+no setup
+
+*Procedure*
+
+1. Click on the textfield directly to the right of the "Question:" text.
+2. Type "What is the answer to everything?"
+3. Click on the button reading "Ask"
+4. Verify that there is a result of "42" in the textfield directly to the right of the "Answer:" text.
+
+
+**0005**
+
+*Setup*
+
+no setup
+
+*Procedure*
+
+1. Verify that the textfield next to the "Answer:" text is greyed out.
+2. Verify that the button reading "Teach" is greyed out.
+3. Verify that the button reading "Correct" is greyed out.
+
+
+**0006**
+
+*Setup*
+
+no setup
+
+*Procedure*
+
+1. Click on the textfield directly to the right of the "Question:" text.
+2. Type "What is the answer to everything?"
+3. Click on the button reading "Ask"
+4. Verify that there is a result of "42" in the textfield directly to the right of the "Answer:" text.
+
+
+**0007**
+
+*Setup*
+
+no setup
+
+*Procedure*
+
+1. Click on the button reading "Ask".
+2. Verify that the textfield next to the "Answer:" text reads "Was that a question?".
+
+
+**0008**
+
+*Setup*
+
+no setup
+
+*Procedure*
+
+1. Click on the textfield directly to the right of the "Question:" text.
+2. Type "What is the answer to everything?"
+3. Click on the button reading "Ask"
+4. Verify that the textfield next to the "Answer:" text is not greyed out and reads "42".
+5. Click and drag over the text in the textfield next to the "Answer:" text.
+6. Type "hello"
+7. Verify that the text in the textfield next to the "Answer:" text now reads "hello".
+
+
+**0009**
+
+*Setup*
+
+perform requirement #0008 steps
+
+*Procedure*
+
+1. Click the button marked "Correct"
+2. Verify that the textfield next to the "Answer:" text is greyed out.
+3. Verify that the button reading "Teach" is greyed out.
+4. Verify that the button reading "Correct" is greyed out.
+5. Click the button marked "Ask".
+6. Verify that the textfield next to the "Answer:" text now reads "hello".
+
+
+**0010**
+
+*Setup*
+
+no setup
+
+*Procedure*
+
+1. Click in the textfield directly next to the "Question:" text.
+2. Type "Who are you?"
+3. Click on the button marked "Ask"
+4. Verify that the textfield directly next to the "Answer:" text now reads "I don't know please teach me."
+5. Verify that the button reading "Teach" is not greyed out.
+
+
+**00011**
+
+*Setup*
+
+perform the steps in requirement #0010
+
+*Procedure*
+
+1. Click in the textfield directly next to the "Answer:" text.
+2, Click and drag over the text in the textfield next to the "Answer:" text.
+3. Type "God."
+4. Click on the button marked "Teach"
+5. Verify that the button reading "Teach" is greyed out.
+6. Verify that the button reading "Correct" is greyed out.
+7. Verify that the textfield next to the "Answer:" text is greyed out.

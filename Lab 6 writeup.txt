@@ -1,0 +1,24 @@
+John Price
+CST 236
+Lab 6 writeup
+
+
+#. What are the advantages and disadvantages of manual testing?
+
+I imagine that one of the major disadvantages in manual testing is the amount of time that it takes to write the test cases and the amount of time it takes to perform the tests.  It's not going to go nearly as fast as a computer could do it.  One of the advantages though is being able to document other things that go wrong during the test that may not be being tested for.  For instance, if you click a button and the header changes color when all you are testing is that the button is clickable.  Also, there are design issues that a computer won't care about that a human tester does.  For arguments sake, let's say that the requirement is to ensure that a button is clickable.  If the button is only a single pixel wide, yeah, it might be clickable, but it would also be a huge PITA to click for a human tester while a computer wouldn't care.
+
+#. What are the advantages and disadvantages of automated testing?
+
+Pretty much the inverse of what I wrote above.  The computer can test the functionality of a program practically just as fast as the program can run.  So time there is a factor.  But unlike a human tester, it can't really comprehend usability.
+
+#. What new bugs did you encounter with the new code?
+
+I didn't encounter any.
+
+#. How many UI tests did you generate? How did you deteremine you had written enough?
+
+17 in the automated tests and 11 in the manual tests.  I felt done when I had tested each piece of each requirement.  (verify teach button is disabled and verify correct button is disabled fell under two separate tests)
+
+#. How long did this lab take to accomplish?
+
+This was easily my fastest lab!  Start to finish in 3 hours or so, not counting all the issues with getting correct installations.
