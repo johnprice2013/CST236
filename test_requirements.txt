@@ -1,9 +1,9 @@
 #0034
 ['test_fib_thousand_time']
 #0030
-['test_one_million']
+[]
 #0033
-['test_fibo_total']
+[]
 #0032
 ['test_fetch_time']
 #0031
@@ -61,13 +61,13 @@
 #0016
 ['test_correct_no_question_provided']
 #0011
-['test_teach_func_works']
+[]
 #0010
-['test_teach_func_exists']
+[]
 #0013
-['test_teach_func_tried_twice', 'test_teach_func_tried_twice_retains']
+[]
 #0012
-['test_teach_no_question_provided']
+[]
 #0009
 ['test_unknown_question']
 #0019
