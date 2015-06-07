@@ -1,0 +1,19 @@
+Lab 8 Write up
+John Price
+CST 236
+
+#. How was this test useful?
+
+I imagine that this would be useful for finding the obvious mistakes in code.  I was unable to find anything, but it *should work* for this.
+
+#. How did you report errors found by this test? How difficult would it be for a developer to debug these errors
+
+I log what is found through a logger upon testing.  This would point out which functions aren't even close to working.  It wouldn't give detailed info though.
+
+#. What other things would be useful to have in a sanity test?
+
+For this lab, an idea of how to actually parse through the imports and classes and functions and how to properly call them.  I wasn't prepared for this AT ALL.  As an example, there are imports being tested in here that I have no idea where they come from, and it somehow doesn't see the methods in pyTona....  So I don't know.
+
+#. How would you sanity test a UI? A database interface? a webpage? a C# program?
+
+I imagine you would do it much the same way.  You are expecting something to happen when calling a function or instantiating something.  If there is an immediate failure, it should be fairly obvious.  Otherwise, it's probably not something that should be run in a sanity test.
